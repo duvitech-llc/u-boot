@@ -1109,6 +1109,7 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_COLIBRI_T30          4493
 #define MACH_TYPE_APALIS_T30           4513
 #define MACH_TYPE_OMAPL138_LCDK        2495
+#define MACH_TYPE_OMAP4_M100           2791
 
 #ifdef CONFIG_ARCH_EBSA110
 # ifdef machine_arch_type
@@ -6532,6 +6533,18 @@ extern unsigned int __machine_arch_type;
 # define machine_is_omap4_panda()	(machine_arch_type == MACH_TYPE_OMAP4_PANDA)
 #else
 # define machine_is_omap4_panda()	(0)
+#endif
+
+#ifdef CONFIG_MACH_OMAP4_M100
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_OMAP4_M100
+# endif
+# define machine_is_omap4_m100()	(machine_arch_type == MACH_TYPE_OMAP4_M100)
+#else
+# define machine_is_omap4_m100()	(0)
 #endif
 
 #ifdef CONFIG_MACH_TI8168EVM

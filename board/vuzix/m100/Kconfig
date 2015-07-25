@@ -1,0 +1,12 @@
+if TARGET_OMAP4_M100
+
+config SYS_BOARD
+	default "m100"
+
+config SYS_VENDOR
+	default "vuzix"
+
+config SYS_CONFIG_NAME
+	default "omap4_m100"
+
+endif

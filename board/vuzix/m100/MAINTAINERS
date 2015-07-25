@@ -1,0 +1,6 @@
+PANDA BOARD
+M:	George Vigelette <gvigelet@duvitech.com>
+S:	Maintained
+F:	board/vuzix/m100/
+F:	include/configs/omap4_m100.h
+F:	configs/omap4_m100_defconfig

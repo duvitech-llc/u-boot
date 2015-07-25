@@ -9,7 +9,10 @@ config TARGET_DUOVERO
 
 config TARGET_OMAP4_PANDA
 	bool "TI OMAP4 PandaBoard"
-
+	
+config TARGET_OMAP4_M100
+	bool "Vuzix OMAP4 M100"
+	
 config TARGET_OMAP4_SDP4430
 	bool "TI OMAP4 SDP4430"
 
@@ -20,6 +23,7 @@ config SYS_SOC
 
 source "board/gumstix/duovero/Kconfig"
 source "board/ti/panda/Kconfig"
+source "board/vuzix/m100/Kconfig"
 source "board/ti/sdp4430/Kconfig"
 
 endif
